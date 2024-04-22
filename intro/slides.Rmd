@@ -114,10 +114,10 @@ knitr::include_graphics("../misc/gfx/wickham.jpg")
 
 - Download: [https://github.com/jensroes/uia-r-workshop](https://github.com/jensroes/uia-r-workshop)
 - Click on: `Code` \> `Download ZIP` \> unzip directory on your machine.
-- Open project by double clicking on `uia-r-workshop.Rproj`
-- `viz/exercises/`: exercises associated with each topic
-- `viz/slides.Rmd`: these slides in R markdown format (`.html` format provided as well)
-- `data/`: scripts read data from here
+- Open project by double-clicking on `uia-r-workshop.Rproj`
+- `exercises/`: exercises associated with each topic
+- `slides.Rmd`: these slides in R-markdown format (`.html` as well)
+- `data/`: scripts will read data from here
 
 
 ## Example data set: @blomkvist2017reference 
