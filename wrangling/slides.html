@@ -3351,7 +3351,7 @@ library(tidyverse)</pre></div>
 
 <ul>
 <li>Placing variables in columns takes advantage of R’s vectorised nature (faster processing, more compact code).</li>
-<li>Consistent data structure allows easier learning of related tools because they have similar underpinning principles.</li>
+<li>Consistent data structure allows easier learning because tidyverse functions have similar underpinning principles.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2><code>tidyverse</code>: verbs</h2></hgroup><article  id="tidyverse-verbs">
@@ -3410,13 +3410,13 @@ glimpse(data_as_tibble)</pre>
 
 <div style="float: right; width: 40%;">
 <pre class = 'prettyprint lang-r'># Picking out variables
-select(data, variable1) 
+select(data, variable) 
 # Subsetting data
 filter(data, variable &gt; 100) 
 # Change / add variables
-mutate(data, variable_sqr = variable^2)
+mutate(data, sqr = variable^2)
 # Aggregate data
-summarise(data, mean_var = mean(variable)) </pre></div>
+summarise(data, avg = mean(variable)) </pre></div>
 
 </article></slide><slide class=""><hgroup><h2>Selecting variables</h2></hgroup><article  id="selecting-variables">
 
@@ -3660,7 +3660,7 @@ $ rt_foot_d  &lt;dbl&gt; 1009, 738…
 $ rt_foot_nd &lt;dbl&gt; 963, 692,…</pre></div>
 
 <div style="float: right; width: 65%;">
-<pre class = 'prettyprint lang-r'>select(blomkvist, id, ends_with(&quot;d&quot;))</pre>
+<pre class = 'prettyprint lang-r'>select(blomkvist, ends_with(&quot;d&quot;))</pre>
 
 <p><strong>???</strong></p></div>
 

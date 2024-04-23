@@ -92,7 +92,7 @@ knitr::include_graphics("../misc/gfx/tidy_1.png")
 ```
 
 - Placing variables in columns takes advantage of R's vectorised nature (faster processing, more compact code).
-- Consistent data structure allows easier learning of related tools because they have similar underpinning principles.
+- Consistent data structure allows easier learning because tidyverse functions have similar underpinning principles.
 
 
 ## `tidyverse`: verbs
@@ -175,13 +175,13 @@ where `argument` specifies which variable / condition etc. the function has to o
 
 ```{r, eval = F}
 # Picking out variables
-select(data, variable1) 
+select(data, variable) 
 # Subsetting data
 filter(data, variable > 100) 
 # Change / add variables
-mutate(data, variable_sqr = variable^2)
+mutate(data, sqr = variable^2)
 # Aggregate data
-summarise(data, mean_var = mean(variable)) 
+summarise(data, avg = mean(variable)) 
 ```
 </div>
 
@@ -374,7 +374,7 @@ glimpse(blomkvist, width = 30)
 <div style="float: right; width: 65%;">
 
 ```{r eval = FALSE}
-select(blomkvist, id, ends_with("d"))
+select(blomkvist, ends_with("d"))
 ```
 **???**
 

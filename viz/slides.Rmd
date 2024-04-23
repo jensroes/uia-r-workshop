@@ -36,11 +36,11 @@ theme_set(
 
 ## Outline
 
-- principles of data visualisation
+- principles of data vis
 - grammar of graphics
 - aesthetics and attributes
 - geometries
-- major tools of data visualisation
+- major tools
 - cosmetics I
 - resources
 - cosmetics II (homework)
@@ -48,11 +48,13 @@ theme_set(
 ## What is data visualisation?
 
 - graphical representation of data
-- graphical data analysis (stats): what do we want to know?
-- communication and perception (design): what do we want to communicate?
-- exploratory plots: get to know data (small specialist audience)
-- explanatory plots: inform and persuade (wide audience)
-- think about your audience
+- graphical data analysis 
+- what do we want to know?
+- what do we want to communicate?
+- What do people take away from your visualisation?
+- exploratory plots (for small specialist audience)
+- explanatory plots: inform and persuade wider audience
+
 
 ## Exploring data
 
@@ -270,8 +272,9 @@ Open script **exercises/1_scatterplots.R**
 - exploring structures in the data 
 - relationship between variables
 - distribution of data
-- develop an understanding of patterns (beyond descriptives)
+- develop an understanding of patterns (beyond means and SDs)
 - selecting appropriate stats
+- prevent wrong conclusions about data / theory
 
 
 ## Anscombe's quartet | @anscombe1973graphs and @tufte1989
@@ -343,15 +346,15 @@ anscombe %>% rename(`Data set` = Set) %>%
 Open script **exercises/tdd.R**
 
 
-## Principles of data visualisation
+## Principles of data vis
 
 - no "one fits all" method
 - some methods are more informative than others
 - maximise what we can learn from data
 - going beyond summary statistics
 - descriptive summary statistics may conceal / obscure important patterns
-- visualisation helps us to understand patterns, structures, relationships
-- prevent wrong conclusions about data / theory
+- but minimise what we want to communicate
+
 
 ## Basic principles 
 
@@ -393,9 +396,9 @@ Open script **exercises/tdd.R**
 
 ## Grammar of graphics | @wilkinson1999statistics
 
-- property 1: graphics consist of distinct layers of grammatical elements (data, aesthetics, geometries)
-- property 2: graphics are built around mappings that determine how data, aesthetics and geometries are combined.
-- e.g. similar ingredients (1) can be combined following different recipe (2)
+- Words can be combined into sentences with different meanings.
+- property 1 (words): graphics consist of distinct layers of grammatical elements (data, aesthetics, geometries)
+- property 2 (syntax): graphics are built around mappings that determine how data, aesthetics and geometries are combined.
 - grammatical elements are organised as layers
 - underlying grammar controls how graphics are combined
 - system of rules for mapping variables to graphical properties
